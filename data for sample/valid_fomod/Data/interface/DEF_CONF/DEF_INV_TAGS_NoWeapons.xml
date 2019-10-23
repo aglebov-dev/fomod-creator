@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!--
+icon		- обозначение значка
+keyword		- тег без скобок
+hidetag		- установите false чтобы принудительно отображать тег вместе со значком (например, для Л П частей брони)
+-->
+<tags>
+<!-- Помощь -->
+	<tag icon='med' keyword='Мед' hidetag='true'/>
+	<tag icon='dev' keyword='Устройство' hidetag='true'/>
+	<tag icon='nuka' keyword='Напиток' hidetag='true'/>
+	<tag icon='food' keyword='Еда' hidetag='true'/>
+	<tag icon='chem' keyword='Препарат' hidetag='true'/>
+	<tag icon='alc' keyword='Выпивка' hidetag='true'/>
+	<tag icon='nuka' keyword='Кола' hidetag='true'/>
+	<tag icon='rfood' keyword='Рад Еда' hidetag='true'/>
+	<tag icon='rawfood' keyword='Сырое' hidetag='true'/>
+	<tag icon='syringer' keyword='Шприц' hidetag='true'/>
+<!-- Боеприпасы -->
+	<tag icon='ammo' keyword='Патроны' hidetag='true'/>
+	<tag icon='core' keyword='Топливо' hidetag='true'/>
+<!-- Силовая броня -->
+	<tag icon='pa_arml' keyword='СБ РукаЛ' hidetag='false'/>
+	<tag icon='pa_armr' keyword='СБ РукаП' hidetag='false'/>
+	<tag icon='pa_chest' keyword='СБ Тело' hidetag='false'/>
+	<tag icon='pa_head' keyword='СБ Шлем' hidetag='false'/>
+	<tag icon='pa_legl' keyword='СБ НогаЛ' hidetag='false'/>
+	<tag icon='pa_legr' keyword='СБ НогаП' hidetag='false'/>
+<!-- Броня -->
+	<tag icon='arml' keyword='РукаЛ' hidetag='false'/>
+	<tag icon='armr' keyword='РукаП' hidetag='false'/>
+	<tag icon='chest' keyword='Нагрудник' hidetag='false'/>
+	<tag icon='legl' keyword='НогаЛ' hidetag='false'/>
+	<tag icon='legr' keyword='НогаП' hidetag='false'/>
+<!-- Armor by Class -->
+	<tag icon='star2' keyword='Боевая' hidetag='true'/>
+	<tag icon='synth' keyword='Броня синтов' hidetag='true'/>
+	<tag icon='abc_dc_guard' keyword='Охранника ДС' hidetag='true'/>
+	<tag icon='abc_leather' keyword='Кожаная' hidetag='true'/>
+	<tag icon='abc_metal' keyword='Металлическая' hidetag='true'/>
+	<tag icon='abc_pa_raider' keyword='Рейдерская СБ' hidetag='true'/>
+	<tag icon='abc_pa_t45' keyword='T-45' hidetag='true'/>
+	<tag icon='abc_pa_t51' keyword='T-51' hidetag='true'/>
+	<tag icon='abc_pa_t60' keyword='T-60' hidetag='true'/>
+	<tag icon='abc_pa_x01' keyword='X-01' hidetag='true'/>
+	<tag icon='abc_marine' keyword='Броня морской пехоты' hidetag='true'/>
+	<tag icon='abc_robot' keyword='Броня роботов' hidetag='true'/>
+	<tag icon='abc_therm_optics' keyword='Ночного зрения' hidetag='true'/>
+	<tag icon='abc_trapper' keyword='Охотника' hidetag='true'/>
+<!-- Экипировка -->
+	<tag icon='casual' keyword='Повседневная' hidetag='true'/>
+	<tag icon='dapper' keyword='Наряд' hidetag='true'/>
+	<tag icon='institute' keyword='Институтская' hidetag='true'/>
+	<tag icon='military' keyword='Военная' hidetag='true'/>
+	<tag icon='anarchy' keyword='Рейдерская' hidetag='true'/>
+	<tag icon='rugged' keyword='Грубая' hidetag='true'/>
+	<tag icon='skimpy' keyword='Откровенная' hidetag='true'/>
+	<tag icon='vault' keyword='Волт-Тек' hidetag='true'/>
+	<tag icon='n_watch' keyword='Часы' hidetag='true'/>
+	<tag icon='bandolier' keyword='Патронташ' hidetag='true'/>
+	<tag icon='n_belt' keyword='Пояс' hidetag='true'/>
+	<tag icon='armrad' keyword='Защ костюм' hidetag='true'/>
+	<tag icon='pants' keyword='Низ' hidetag='true'/>
+	<tag icon='n_ring_wed' keyword='Браслет' hidetag='true'/>
+	<tag icon='n_cape' keyword='Накидка' hidetag='true'/>
+	<tag icon='dog' keyword='Собака' hidetag='true'/>
+	<tag icon='n_ear' keyword='Серьги' hidetag='true'/>
+	<tag icon='goog' keyword='Очки' hidetag='true'/>
+	<tag icon='n_foot' keyword='Обувь' hidetag='true'/>
+	<tag icon='la_gloves' keyword='Перчатки' hidetag='true'/>
+	<tag icon='n_harness' keyword='Ремни' hidetag='true'/>
+	<tag icon='hat' keyword='Шляпа' hidetag='true'/>
+	<tag icon='hat' keyword='Бандана' hidetag='true'/>
+	<tag icon='helm' keyword='Шлем' hidetag='true'/>
+	<tag icon='n_jacket' keyword='Куртка' hidetag='true'/>
+	<tag icon='w_2h' keyword='Большое холодное оружие' hidetag='true'/>
+	<tag icon='n_leg' keyword='Поножи' hidetag='true'/>
+	<tag icon='w_1h' keyword='Холодное оружие' hidetag='true'/>
+	<tag icon='n_mouth' keyword='Рот' hidetag='true'/>
+	<tag icon='mask' keyword='Маска' hidetag='true'/>
+	<tag icon='neck' keyword='Ожерелье' hidetag='true'/>
+	<tag icon='n_shield' keyword='Оффхенд' hidetag='true'/>
+	<tag icon='pack' keyword='Мешок' hidetag='true'/>
+	<tag icon='n_dumbbels' keyword='Пирсинг' hidetag='true'/>
+	<tag icon='w_rifle' keyword='Ружье' hidetag='true'/>
+	<tag icon='ring' keyword='Кольцо' hidetag='true'/>
+	<tag icon='la_packlower' keyword='Ранец' hidetag='true'/>
+	<tag icon='n_scarf' keyword='Шарф' hidetag='true'/>
+	<tag icon='la_holster' keyword='Кобура' hidetag='true'/>
+	<tag icon='smut' keyword='Супермутант' hidetag='true'/>
+	<tag icon='la_attire' keyword='Верх' hidetag='true'/>
+	<tag icon='n_vest' keyword='Жилет' hidetag='true'/>
+<!-- Одежда -->
+	<tag icon='armdef' keyword='Броня' hidetag='true'/>
+	<tag icon='shirt' keyword='Одежда' hidetag='true'/>
+	<tag icon='arm' keyword='Под броню' hidetag='true'/>
+<!-- Взрывчатка -->
+	<tag icon='gren' keyword='Взрывчатка' hidetag='true'/>
+	<tag icon='gren' keyword='Граната' hidetag='true'/>
+	<tag icon='mine' keyword='Мина' hidetag='true'/>
+	<tag icon='sgren' keyword='Шашка' hidetag='true'/>
+<!-- Хлам -->
+	<tag icon='wood' keyword='Ресурсы' hidetag='true'/>
+	<tag icon='trash' keyword='Лом' hidetag='true'/>
+	<tag icon='tool' keyword='Инструмент' hidetag='true'/>
+<!-- Разное -->
+	<tag icon='caps' keyword='Валюта' hidetag='true'/>
+	<tag icon='lock' keyword='Отмычки' hidetag='true'/>
+	<tag icon='book' keyword='Настройки' hidetag='true'/>
+	<tag icon='uniq' keyword='Уникальный' hidetag='true'/>
+	<tag icon='diam' keyword='Ценный' hidetag='true'/>
+	<tag icon='bottle' keyword='Бутылка' hidetag='true'/>
+	<tag icon='uniq' keyword='Коллекция' hidetag='true'/>
+	<tag icon='n_flask' keyword='Крафт' hidetag='true'/>
+	<tag icon='game' keyword='Игра' hidetag='true'/>
+	<tag icon='key' keyword='Хак' hidetag='true'/>
+	<tag icon='holo' keyword='Голозапись' hidetag='true'/>
+	<tag icon='note' keyword='Записка' hidetag='true'/>
+	<tag icon='key' keyword='Пароль' hidetag='true'/>
+	<tag icon='head' keyword='Пупс' hidetag='true'/>
+	<tag icon='mag' keyword='Журнал' hidetag='true'/>
+	<tag icon='quest' keyword='Квест' hidetag='true'/>
+	<tag icon='sack' keyword='Мусор' hidetag='true'/>
+	<tag icon='key' keyword='Ключ' hidetag='true'/>
+	<tag icon='password' keyword='Пароль' hidetag='true'/>
+	<tag icon='key' keyword='Пасс-карта' hidetag='true'/>
+<!-- Модификации -->
+	<tag icon='mods' keyword='Мод' hidetag='true'/>
+<!-- Способности -->
+	<tag icon='head' keyword='Пупс' hidetag='true'/>
+	<tag icon='mag' keyword='Журнал' hidetag='true'/>
+	<tag icon='wave' keyword='Компаньон' hidetag='true'/>
+<!-- Другие модули -->
+	<tag icon='jetpack' keyword='СБ Реактивный ранец' hidetag='true'/>
+	<tag icon='module' keyword='Модуль' hidetag='true'/>
+</tags>

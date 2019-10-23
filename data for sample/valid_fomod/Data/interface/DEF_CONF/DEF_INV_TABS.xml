@@ -1,0 +1,173 @@
+
+<!--
+filters 
+	4294967295	- all
+	1			- favorites
+	2			- weapons
+	4			- apparel
+	8			- aid
+	512			- all misc
+	1024		- junk
+	2048		- modifications
+	4096		- ammo
+	8192		- all holotapes
+	128			- all notes and magazines
+	
+	to show in one tabs weapons and apparel use SUM of flags 2 + 4 = 6
+			<filter>6</filter>
+	
+	to show tab with only legendary items and favorites items use 
+			<filterflag>1</filterflag>
+
+	here is additional icons (for tabs only not for items)
+			pack star mods weap
+			
+	all <tab></tab> tags must contain <filter> <name> and <icon> tags
+	
+	<inctags> use to select ONLY these tagged items from provided <filter>
+	<distags> use to select ALL items from provided <filter> EXCEPT these tagged items
+	
+	u can't use <inctags> and <distags> at the same time
+	
+	on the bottom example for vanilla tabs
+-->
+
+<settings>
+	<author>Neanka</author>
+	<desc>My tabs</desc>
+	<tabs>
+		<tab>
+			<icon>pack</icon>
+			<name>$INVENTORY</name>
+			<filter>4294967295</filter>
+		</tab>
+		<tab>
+			<icon>star</icon>
+			<name>$InventoryCategoryFav</name>
+			<filter>4294967295</filter>
+			<filterflag>1</filterflag>
+		</tab>
+		<tab>
+			<icon>weap</icon>
+			<name>$InventoryCategoryWeapons</name>
+			<filter>2</filter>
+			<distags>Граната</distags>
+			<distags>Мина</distags>
+			<distags>Шашка</distags>
+		</tab>
+		<tab>
+			<icon>gren</icon>
+			<name>$InventoryCategoryExplosives</name>
+			<filter>2</filter>
+			<inctags>Граната</inctags>
+			<inctags>Мина</inctags>
+			<inctags>Шашка</inctags>
+		</tab>	
+		<tab>
+			<icon>arm</icon>
+			<name>$InventoryCategoryApparel</name>
+			<filter>4</filter>
+		</tab>
+		<tab>
+			<icon>chem</icon>
+			<name>$InventoryCategoryAid</name>
+			<filter>8</filter>
+			<distags>Напиток</distags>
+			<distags>Еда</distags>
+			<distags>Рад Еда</distags>
+			<distags>Сырое</distags>
+		</tab>
+		<tab>
+			<icon>food</icon>
+			<name>$InventoryCategoryFood</name>
+			<filter>8</filter>
+			<inctags>Напиток</inctags>
+			<inctags>Еда</inctags>
+			<inctags>Рад Еда</inctags>
+			<inctags>Сырое</inctags>
+		</tab>
+		<tab>
+			<icon>trash</icon>
+			<name>$InventoryCategoryMisc</name>
+			<filter>512</filter>
+			<distags>Голозапись</distags>
+			<distags>Игра</distags>
+			<distags>Записка</distags>
+		</tab>
+		<tab>
+			<icon>holo</icon>
+			<name>$InventoryCategoryHolo</name>
+			<filter>8192</filter>
+		</tab>
+		<tab>
+			<icon>note</icon>
+			<name>$InventoryCategoryNote</name>
+			<filter>128</filter>
+			<distags>Журнал</distags>
+		</tab>
+		<tab>
+			<icon>tool</icon>
+			<name>$InventoryCategoryJunk</name>
+			<filter>1024</filter>
+		</tab>
+		<tab>
+			<icon>mods</icon>
+			<name>$InventoryCategoryMods</name>
+			<filter>2048</filter>
+		</tab>
+		<tab>
+			<icon>ammo</icon>
+			<name>$InventoryCategoryAmmo</name>
+			<filter>4096</filter>
+		</tab>
+	</tabs>
+</settings>
+
+
+<!--
+<settings>
+	<tabs>
+		<tab>
+			<icon>pack</icon>
+			<name>$INVENTORY</name>
+			<filter>4294967295</filter>
+		</tab>
+		<tab>
+			<icon>weap</icon>
+			<name>$InventoryCategoryWeapons</name>
+			<filter>2</filter>
+		</tab>
+		<tab>
+			<icon>arm</icon>
+			<name>$InventoryCategoryApparel</name>
+			<filter>4</filter>
+		</tab>
+		<tab>
+			<icon>chem</icon>
+			<name>$InventoryCategoryAid</name>
+			<filter>8</filter>
+		</tab>
+		<tab>
+			<icon>trash</icon>
+			<name>$InventoryCategoryMisc</name>
+			<filter>512</filter>
+		</tab>
+		<tab>
+			<icon>tool</icon>
+			<name>$InventoryCategoryJunk</name>
+			<filter>1024</filter>
+		</tab>
+		<tab>
+			<icon>mods</icon>
+			<name>$InventoryCategoryMods</name>
+			<filter>2048</filter>
+		</tab>
+		<tab>
+			<icon>ammo</icon>
+			<name>$InventoryCategoryAmmo</name>
+			<filter>4096</filter>
+		</tab>
+	</tabs>
+</settings>
+
+-->

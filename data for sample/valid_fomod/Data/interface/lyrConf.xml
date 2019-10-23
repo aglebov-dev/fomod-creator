@@ -1,0 +1,189 @@
+<?xml version="1.0" ?>
+<!--
+tag 				- RegExp filter of tags (google regexp for more syntax information)
+					more accurate filter - better performance
+					simple examples:
+					regexp										which tags it will find
+					"\|Key\|"									|Key|
+					"\(Food\)|\[Prewar|Raw\]"					(Food), [Prewar] and [Raw]
+					"[\(\[]Chem|Device[\]\)]"					[Chem], (Chem), (Device), [Device]
+					"[\(\[\|]Grenade|Signal|Mine[\|\]\)]"		Grenade, Signal and Mine within any of these brackets ({[]})
+	
+favorite 			- add heart icon
+
+taggedForSearch 	- add magnifier icon
+
+isLegendary 		- add star icon
+
+filterFlag 			- point where make subCategory
+filterMask 			- point where search items
+					4294967295	- all
+					1			- favorites
+					2			- weapons
+					4			- apparel
+					8			- aid
+					512			- all misc
+					1024		- junk
+					2048		- modifications
+					4096		- ammo
+					8192		- all holotapes
+					128			- all notes and magazines
+	
+equipState 			- add square icon
+
+text 				- name of subcategory (you can use tag here for make icon, but tag shouldn't match tag filter
+					otherwise it will put itself out and disappear from pipboy)
+					
+canFavorite			- point if subcategory can be favorite (always set false or just ignore this tag)
+
+subFilter			- any unique Number (a power of 2 starting from 65536)
+					65536, 131072, 262144, 524288 etc. (the same subfilters will place in one subcategory)	
+-->
+<subCategories>
+	<subCategory tag="\|Ключ|Пасс-карта|Пароль\|">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">512</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Ключ} Связка ключей</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">512</filterMask>
+		<subFilter type="int">65536</subFilter>
+	</subCategory>
+	<subCategory tag="\[Записка\]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<count type="int">0</count>
+		<filterFlag type="int">512</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Записка} Записки</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">512</filterMask>
+		<subFilter type="int">131072</subFilter>
+	</subCategory>
+	<subCategory tag="\[Голозапись|Игра\]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<count type="int">0</count>
+		<filterFlag type="int">512</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Голозапись} Голозаписи</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">512</filterMask>
+		<subFilter type="int">262144</subFilter>
+	</subCategory>
+	<subCategory tag="\[Журнал\]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<count type="int">0</count>
+		<filterFlag type="int">512</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Журнал} Журналы</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">512</filterMask>
+		<subFilter type="int">524288</subFilter>
+	</subCategory>
+	<subCategory tag="\((Мед|Устройство)\)">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">8</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Мед} Помощь</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">8</filterMask>
+		<subFilter type="int">1048576</subFilter>
+	</subCategory>
+	<subCategory tag="\[Препарат\]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">8</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Препарат} Препараты</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">8</filterMask>
+		<subFilter type="int">2097152</subFilter>
+	</subCategory>
+	<subCategory tag="[\[\(]Напиток|Выпивка|Кола[\]\)]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">8</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Кола} Напитки</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">8</filterMask>
+		<subFilter type="int">4194304</subFilter>
+	</subCategory>
+	<subCategory tag="\[Рад Еда|Сырое\]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">8</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Рад Еда} Радиоактивная еда</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">8</filterMask>
+		<subFilter type="int">8388608</subFilter>
+	</subCategory>
+	<subCategory tag="[\(\{]Граната|Шашка|Мина[\}\)]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">2</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>(Граната) Взрывчатка</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">2</filterMask>
+		<subFilter type="int">16777216</subFilter>
+	</subCategory>
+	<subCategory tag="\[Бутылка\]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">8</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Бутылка} Бутылки</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">1536</filterMask>
+		<subFilter type="int">33554432</subFilter>
+	</subCategory>
+	<subCategory tag="\(Еда\)">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">8</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Еда} Еда</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">8</filterMask>
+		<subFilter type="int">67108864</subFilter>
+	</subCategory>
+	<subCategory tag="[\[\(]Настройки[\)\]]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">512</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Настройки} Настроечные голозаписи</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">520</filterMask>
+		<subFilter type="int">134217728</subFilter>
+	</subCategory>
+	<subCategory tag="\[Квест\]">
+		<favorite type="boolean">false</favorite>
+		<taggedForSearch type="boolean">false</taggedForSearch>
+		<isLegendary type="boolean">false</isLegendary>
+		<filterFlag type="int">512</filterFlag>
+		<equipState type="int">0</equipState>
+		<text>{Квест} Предметы для квестов</text>
+		<canFavorite type="boolean">false</canFavorite>
+		<filterMask type="int">4294967295</filterMask>
+		<subFilter type="int">268435456</subFilter>
+	</subCategory>
+</subCategories>
